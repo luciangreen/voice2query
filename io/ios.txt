@@ -1,0 +1,402 @@
+voice2query: 200 inputs and outputs, from real runs (io/ios.pl has the same as Prolog facts).
+
+1. say(open(terminal))
+   => [open,terminal]
+2. query([go,to,desktop])
+   => cd(desktop)
+3. number_words(0)
+   => [zero]
+4. say(find(plan))
+   => [find,files,named,plan]
+5. query([what,is,sixteen,times,zero])
+   => eval(16*0)
+6. number_words(25)
+   => [twenty,five]
+7. say(eval(58*30))
+   => [what,is,fifty,eight,times,thirty]
+8. query([find,files,named,plan])
+   => find(plan)
+9. number_words(3)
+   => [three]
+10. say(open(iedit))
+   => [open,iedit]
+11. query([close,dancestudio])
+   => close(dancestudio)
+12. number_words(38)
+   => [thirty,eight]
+13. say(eval(70*18))
+   => [what,is,seventy,times,eighteen]
+14. query([find,files,named,plan])
+   => find(plan)
+15. number_words(56)
+   => [fifty,six]
+16. say(close(shellrun))
+   => [close,shellrun]
+17. query([time,is,it])
+   => unknown
+18. number_words(27)
+   => [twenty,seven]
+19. say(time)
+   => [what,time,is,it]
+20. query([what,is,ninety,one,minus,eleven])
+   => eval(91-11)
+21. number_words(34)
+   => [thirty,four]
+22. say(find(plan))
+   => [find,files,named,plan]
+23. query([what,is,four,plus,nineteen])
+   => eval(4+19)
+24. number_words(8)
+   => [eight]
+25. say(cd(notes))
+   => [go,to,notes]
+26. query([what,is,seventy,plus,ninety,six])
+   => eval(70+96)
+27. number_words(38)
+   => [thirty,eight]
+28. say(eval(47-79))
+   => [what,is,forty,seven,minus,seventy,nine]
+29. query([find,files,named,plan])
+   => find(plan)
+30. number_words(32)
+   => [thirty,two]
+31. say(time)
+   => [what,time,is,it]
+32. query([files,named,plan])
+   => unknown
+33. number_words(64)
+   => [sixty,four]
+34. say(close(dancestudio))
+   => [close,dancestudio]
+35. query([close,terminal])
+   => close(terminal)
+36. number_words(84)
+   => [eighty,four]
+37. say(time)
+   => [what,time,is,it]
+38. query([time,is,it])
+   => unknown
+39. number_words(67)
+   => [sixty,seven]
+40. say(eval(43*14))
+   => [what,is,forty,three,times,fourteen]
+41. query([open,shellrun])
+   => open(shellrun)
+42. number_words(56)
+   => [fifty,six]
+43. say(cd(projects))
+   => [go,to,projects]
+44. query([find,files,named,plan])
+   => find(plan)
+45. number_words(9)
+   => [nine]
+46. say(eval(65*86))
+   => [what,is,sixty,five,times,eighty,six]
+47. query([what,is,ninety,seven,plus,eighty])
+   => eval(97+80)
+48. number_words(36)
+   => [thirty,six]
+49. say(eval(92*66))
+   => [what,is,ninety,two,times,sixty,six]
+50. query([to,projects])
+   => unknown
+51. number_words(16)
+   => [sixteen]
+52. say(find(plan))
+   => [find,files,named,plan]
+53. query([open,terminal])
+   => open(terminal)
+54. number_words(79)
+   => [seventy,nine]
+55. say(time)
+   => [what,time,is,it]
+56. query([go,to,home])
+   => cd(home)
+57. number_words(76)
+   => [seventy,six]
+58. say(open(terminal))
+   => [open,terminal]
+59. query([find,files,named,plan])
+   => find(plan)
+60. number_words(54)
+   => [fifty,four]
+61. say(time)
+   => [what,time,is,it]
+62. query([what,time,is,it])
+   => time
+63. number_words(43)
+   => [forty,three]
+64. say(time)
+   => [what,time,is,it]
+65. query([open,shellrun])
+   => open(shellrun)
+66. number_words(69)
+   => [sixty,nine]
+67. say(eval(99*43))
+   => [what,is,ninety,nine,times,forty,three]
+68. query([what,is,eighty,one,times,twenty,one])
+   => eval(81*21)
+69. number_words(7)
+   => [seven]
+70. say(cd(home))
+   => [go,to,home]
+71. query([open,shellrun])
+   => open(shellrun)
+72. number_words(76)
+   => [seventy,six]
+73. say(close(dancestudio))
+   => [close,dancestudio]
+74. query([what,is,eighty,two,times,twenty])
+   => eval(82*20)
+75. number_words(21)
+   => [twenty,one]
+76. say(eval(20-27))
+   => [what,is,twenty,minus,twenty,seven]
+77. query([time,is,it])
+   => unknown
+78. number_words(94)
+   => [ninety,four]
+79. say(cd(projects))
+   => [go,to,projects]
+80. query([what,is,seventy,four,minus,nineteen])
+   => eval(74-19)
+81. number_words(49)
+   => [forty,nine]
+82. say(time)
+   => [what,time,is,it]
+83. query([what,is,twenty,seven,times,three])
+   => eval(27*3)
+84. number_words(36)
+   => [thirty,six]
+85. say(close(terminal))
+   => [close,terminal]
+86. query([is,twenty,nine,times,twenty,five])
+   => unknown
+87. number_words(14)
+   => [fourteen]
+88. say(eval(11*82))
+   => [what,is,eleven,times,eighty,two]
+89. query([what,time,is,it])
+   => time
+90. number_words(18)
+   => [eighteen]
+91. say(eval(75-50))
+   => [what,is,seventy,five,minus,fifty]
+92. query([open,terminal])
+   => open(terminal)
+93. number_words(70)
+   => [seventy]
+94. say(eval(11-93))
+   => [what,is,eleven,minus,ninety,three]
+95. query([what,is,thirty,five,plus,forty,nine])
+   => eval(35+49)
+96. number_words(56)
+   => [fifty,six]
+97. say(find(plan))
+   => [find,files,named,plan]
+98. query([what,is,ninety,nine,times,fifty])
+   => eval(99*50)
+99. number_words(71)
+   => [seventy,one]
+100. say(open(iedit))
+   => [open,iedit]
+101. query([open,terminal])
+   => open(terminal)
+102. number_words(93)
+   => [ninety,three]
+103. say(eval(21*53))
+   => [what,is,twenty,one,times,fifty,three]
+104. query([what,time,is,it])
+   => time
+105. number_words(49)
+   => [forty,nine]
+106. say(time)
+   => [what,time,is,it]
+107. query([what,is,thirteen,times,twenty,five])
+   => eval(13*25)
+108. number_words(42)
+   => [forty,two]
+109. say(eval(25*56))
+   => [what,is,twenty,five,times,fifty,six]
+110. query([what,is,thirty,nine,times,fifty])
+   => eval(39*50)
+111. number_words(50)
+   => [fifty]
+112. say(eval(36+80))
+   => [what,is,thirty,six,plus,eighty]
+113. query([what,is,ninety,two,times,seventy,four])
+   => eval(92*74)
+114. number_words(71)
+   => [seventy,one]
+115. say(eval(86-38))
+   => [what,is,eighty,six,minus,thirty,eight]
+116. query([what,is,sixteen,plus,ninety,nine])
+   => eval(16+99)
+117. number_words(88)
+   => [eighty,eight]
+118. say(time)
+   => [what,time,is,it]
+119. query([go,to,notes])
+   => cd(notes)
+120. number_words(16)
+   => [sixteen]
+121. say(open(iedit))
+   => [open,iedit]
+122. query([open,iedit])
+   => open(iedit)
+123. number_words(52)
+   => [fifty,two]
+124. say(open(dancestudio))
+   => [open,dancestudio]
+125. query([close,shellrun])
+   => close(shellrun)
+126. number_words(36)
+   => [thirty,six]
+127. say(cd(desktop))
+   => [go,to,desktop]
+128. query([is,one,plus,nine])
+   => unknown
+129. number_words(98)
+   => [ninety,eight]
+130. say(eval(25*89))
+   => [what,is,twenty,five,times,eighty,nine]
+131. query([what,time,is,it])
+   => time
+132. number_words(84)
+   => [eighty,four]
+133. say(eval(54*85))
+   => [what,is,fifty,four,times,eighty,five]
+134. query([is,eighteen,minus,fourteen])
+   => unknown
+135. number_words(6)
+   => [six]
+136. say(find(plan))
+   => [find,files,named,plan]
+137. query([find,files,named,plan])
+   => find(plan)
+138. number_words(4)
+   => [four]
+139. say(eval(10*34))
+   => [what,is,ten,times,thirty,four]
+140. query([what,is,sixty,one,plus,thirty,eight])
+   => eval(61+38)
+141. number_words(91)
+   => [ninety,one]
+142. say(close(shellrun))
+   => [close,shellrun]
+143. query([go,to,home])
+   => cd(home)
+144. number_words(92)
+   => [ninety,two]
+145. say(find(plan))
+   => [find,files,named,plan]
+146. query([go,to,desktop])
+   => cd(desktop)
+147. number_words(58)
+   => [fifty,eight]
+148. say(cd(desktop))
+   => [go,to,desktop]
+149. query([what,is,seventy,nine,minus,ninety,seven])
+   => eval(79-97)
+150. number_words(63)
+   => [sixty,three]
+151. say(close(terminal))
+   => [close,terminal]
+152. query([go,to,desktop])
+   => cd(desktop)
+153. number_words(19)
+   => [nineteen]
+154. say(close(dancestudio))
+   => [close,dancestudio]
+155. query([close,iedit])
+   => close(iedit)
+156. number_words(66)
+   => [sixty,six]
+157. say(close(iedit))
+   => [close,iedit]
+158. query([find,files,named,plan])
+   => find(plan)
+159. number_words(69)
+   => [sixty,nine]
+160. say(find(plan))
+   => [find,files,named,plan]
+161. query([go,to,projects])
+   => cd(projects)
+162. number_words(53)
+   => [fifty,three]
+163. say(cd(projects))
+   => [go,to,projects]
+164. query([is,forty,two,plus,twenty,five])
+   => unknown
+165. number_words(9)
+   => [nine]
+166. say(find(plan))
+   => [find,files,named,plan]
+167. query([find,files,named,plan])
+   => find(plan)
+168. number_words(92)
+   => [ninety,two]
+169. say(find(plan))
+   => [find,files,named,plan]
+170. query([go,to,notes])
+   => cd(notes)
+171. number_words(19)
+   => [nineteen]
+172. say(eval(33*95))
+   => [what,is,thirty,three,times,ninety,five]
+173. query([close,dancestudio])
+   => close(dancestudio)
+174. number_words(54)
+   => [fifty,four]
+175. say(eval(78*77))
+   => [what,is,seventy,eight,times,seventy,seven]
+176. query([what,time,is,it])
+   => time
+177. number_words(55)
+   => [fifty,five]
+178. say(open(terminal))
+   => [open,terminal]
+179. query([what,is,forty,six,plus,eighty,one])
+   => eval(46+81)
+180. number_words(28)
+   => [twenty,eight]
+181. say(open(terminal))
+   => [open,terminal]
+182. query([files,named,plan])
+   => unknown
+183. number_words(9)
+   => [nine]
+184. say(eval(44+46))
+   => [what,is,forty,four,plus,forty,six]
+185. query([close,shellrun])
+   => close(shellrun)
+186. number_words(6)
+   => [six]
+187. say(eval(82-93))
+   => [what,is,eighty,two,minus,ninety,three]
+188. query([close,shellrun])
+   => close(shellrun)
+189. number_words(64)
+   => [sixty,four]
+190. say(eval(72+73))
+   => [what,is,seventy,two,plus,seventy,three]
+191. query([is,twenty,six,minus,sixty,seven])
+   => unknown
+192. number_words(48)
+   => [forty,eight]
+193. say(open(terminal))
+   => [open,terminal]
+194. query([dancestudio])
+   => unknown
+195. number_words(85)
+   => [eighty,five]
+196. say(eval(39*3))
+   => [what,is,thirty,nine,times,three]
+197. query([close,iedit])
+   => close(iedit)
+198. number_words(53)
+   => [fifty,three]
+199. say(find(plan))
+   => [find,files,named,plan]
+200. query([what,is,seventy,nine,times,thirty,two])
+   => eval(79*32)
